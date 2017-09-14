@@ -5,48 +5,57 @@
 	<title>more images</title>
 </head>
 <style type="text/css">
-	img {
-		width: 100%;
-		height: 30%;
+	img{
+		height: 300px;
+		width: 400px;
 	}
 	strong {
 		font: bold;
 	}
+	.withborder .w{
+		border:2px solid black;
+		border-collapse: collapse;
+	}
 </style>
 <body style="background-color: grey">
-	<table style="width:100%;">
-		<tr style="width: 50%">
-			<td><img src="http://www.bmw.fr/dam/brandBM/common/newvehicles/x-series/x5/2013/design/bg-top-stage-full.jpg.resource.1373898402888.jpg"></td>
-			<td><img src="https://media.ed.edmunds-media.com/bmw/x5/2013/oem/2013_bmw_x5_4dr-suv_xdrive35d_fq_oem_1_1280.jpg"></td>
-			<td><img src="https://www.bmw.ua/content/dam/bmw/common/all-models/x-series/x5/2015/at-a-glance/x5_at-a-glance_stagepresentation.jpg/_jcr_content/renditions/cq5dam.resized.img.1680.large.time1448008829330.jpg"></td>
-		</tr>
-		<tr>
-			<td><img src="http://www.bmw.fr/dam/brandBM/marketFR/countryFR/fr_FR/newvehicles/x-series/X5/x5_02.jpg.resource.1456415508973.jpg"></td>
-			<td><img src="http://www.bmw.co.uk/dam/brandBM/marketGB/countryGB/newvehicles/x-series/x5/2015/X5_1270x699.jpg.resource.1471863276210.jpg"></td>
-			<td><img src="http://f15.bimmerpost.com/forums/attachment.php?attachmentid=1037658&stc=1&d=1401732754"></td>
-		</tr>
-	</table>
+	<table class="first">
+			<tr>
+
+			<td><div class="a"><img src="http://www.bmw.fr/dam/brandBM/common/newvehicles/x-series/x5/2013/design/bg-top-stage-full.jpg.resource.1373898402888.jpg"></div></td>
+			<td><div class="b"><img src="https://media.ed.edmunds-media.com/bmw/x5/2013/oem/2013_bmw_x5_4dr-suv_xdrive35d_fq_oem_1_1280.jpg"></div></td>
+			<td><div class="c"><img src="https://www.bmw.ua/content/dam/bmw/common/all-models/x-series/x5/2015/at-a-glance/x5_at-a-glance_stagepresentation.jpg/_jcr_content/renditions/cq5dam.resized.img.1680.large.time1448008829330.jpg"></div></td>
+			</tr>
+			<tr>
+			<td>
+			<div class="d">
+			<img src="http://www.bmw.fr/dam/brandBM/marketFR/countryFR/fr_FR/newvehicles/x-series/X5/x5_02.jpg.resource.1456415508973.jpg"></div></td>
+			<td>
+			<div class="e"><img src="http://www.bmw.co.uk/dam/brandBM/marketGB/countryGB/newvehicles/x-series/x5/2015/X5_1270x699.jpg.resource.1471863276210.jpg"></div></td>
+			<td>
+			<div class="f"><img src="http://f15.bimmerpost.com/forums/attachment.php?attachmentid=1037658&stc=1&d=1401732754"></div></td>
+			</tr>
+	</table>	
 	<br>
-	<table style="width:100%">
-	<tr>
-    <td>Brand</td>
-    <td><strong>BMW</strong></td>
+	<table class="withborder" style="width:100%">
+	<tr >
+    <td class="w">Brand</td>
+    <td class="w"><strong>BMW</strong></td>
     </tr>
     <tr>
-    <td>Model</td>
-    <td><strong>X5</strong></td>
+    <td class="w">Model</td>
+    <td class="w"><strong>X5</strong></td>
     </tr>
     <tr>
-    <td>Year</td>
-    <td><strong>2010</strong></td>
+    <td class="w">Year</td>
+    <td class="w"><strong>2010</strong></td>
     </tr>
     <tr>
-    <td>Milage</td>
-    <td><strong>100 000</strong></td>
+    <td class="w">Milage</td>
+    <td class="w"><strong>100 000</strong></td>
     </tr>
     <tr>
-    <td>Price</td>
-    <td><strong>90 000</strong></td>
+    <td class="w">Price</td>
+    <td class="w"><strong>90 000</strong></td>
     </tr>
     </table>
 </body>
