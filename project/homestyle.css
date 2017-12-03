@@ -1,0 +1,438 @@
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-image: url("http://ncag.org/wp-content/uploads/2017/02/74c1eabc5efc1b0d5a7c7ddabb823cb3.jpg");
+}
+.hidde{display: none;}
+.hidd{display: none;}
+.opop{display: none;}
+.opac{
+  position: absolute;
+  width: 100%;
+  height: 1260px;
+  display:inline-block;
+  background-color: black;
+  opacity: .8;
+  z-index: 2;
+}
+
+.mainreg{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  z-index:10;
+  margin-top: 100px;
+  left:20%;
+  border-radius: 5px;
+}
+.mainlog{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 30%;
+  background-color: white;
+  z-index:3;
+  margin-top: 100px;
+  left:20%;
+  border-radius: 5px;
+}
+#loginname{
+  margin-top:60px;
+  border: 2px solid black;
+  background-color: grey;
+  border-radius: 5px;
+  height: 10%;
+  width: 10%;
+}
+#loginpassword{
+  margin-top:50px;
+  border: 2px solid black;
+  background-color: yellow;
+  border-radius: 5px;
+  height: 10%;
+  width: 10%;
+}
+#loginsubmit{
+  margin-top:50px;
+  width: 15%;
+  height: 5%;
+  border:2px solid black;
+  border-radius: 5px;
+}
+
+#loginnam{
+  margin-top:40px;
+  border: 2px solid black;
+  background-color: grey;
+  border-radius: 5px;
+  height: 6%;
+  width: 15%;
+}
+#loginpasswor{
+  margin-top:50px;
+  border: 2px solid black;
+  background-color: yellow;
+  border-radius: 5px;
+  height: 6%;
+  width: 15%;
+}
+#loginsubmi{
+  margin-top:50px;
+  width: 15%;
+  height: 5%;
+  border:2px solid black;
+  border-radius: 5px;
+}
+.header{
+  display:flex;
+  width:100%;
+  height: 6em;
+  top:0;
+  flex-direction: row;
+  background-color: #392613;
+  flex-wrap: nowrap;
+}
+.image{
+  margin-right: 2em;
+  margin-left: 2em;
+  width: 6.5em;
+  height: 5.5em;
+  border: 1px dashed black;
+}
+.icon{
+  width: 6.3em;
+  height: 5.3em;
+}
+.cat{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.home, .buy, .sell, .profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Monotype Corsiva" Cursive;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.home:hover, .buy:hover, .sell:hover, .profile:hover{
+  font-size: 2em;
+  text-align: center;
+  justify-content: center;
+  height: 3em;
+}
+.sighup, .sighin{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+  width: 6em;
+  height: 4em;
+}
+.upb{
+  border:1px solid #264d00;
+  border-radius: 5px;
+  width: 5em;
+  background-color: #264d00;
+  height: 3em;
+  color:white;
+}
+.inb{
+  color:white;
+  background-color: #7a7a52;
+  border:1px solid #7a7a52;
+  border-radius: 5px;
+  width: 5em;
+  height: 3em;
+}
+.container{
+  margin-top: 5em;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.content{
+  margin-top: 5em;
+  margin-bottom: 2em;
+  margin-left: 9em;
+  width: 80%;
+  background-color: #ffffb3;
+  border:2px solid #ffd480;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+h1{
+  text-align: center;
+}
+.contenttext{
+  color:black;
+}
+.fortext{
+  width: 90%;
+  margin-left: 3em;
+}
+.footer{
+  text-align: center;
+  background-color: #392613;
+}
+
+@media only screen and (max-width:1080px){
+  .formainphoto{
+    margin-left: 11em;
+    width: 45em;
+    height: 28em;
+  }
+  .mainphoto{
+    max-width: 100%;
+  }
+  .content{
+    margin-left: 6.5em;
+  }
+  .fortext{
+    margin-left: 1em;
+  }
+  .cat{
+    margin-left: 1em;
+    margin-right: 0.2em;
+  }
+  .icon{
+    width:4.2em;
+    height:3em;
+  }
+  .image{
+    margin-top: 1.2em;
+    margin-left: 0.5em;
+    width:4.4em;
+    height:3.4em;
+    margin-right: 0;
+  }
+  .inb, .upb{
+    width: 5.2em;
+    height: 3em;
+    margin-right: 0.5em;
+  }
+  .home:hover, .buy:hover, .sell:hover, .profile:hover{
+    font-size: 2em;
+    height: 2em;
+  }
+}
+
+
+@media only screen and (max-width:720px){
+  .formainphoto{
+    margin-left: 3.5em;
+    width: 37em;
+    height: 24em;
+  }
+  .mainphoto{
+    max-width: 100%;
+  }
+  .content{
+    margin-left: 4em;
+  }
+  .fortext{
+    margin-left: 1em;
+  }
+  .cat{
+    margin-left: 1em;
+    margin-right: 0.2em;
+  }
+  .icon{
+    width:4.2em;
+    height:3em;
+  }
+  .image{
+    margin-top: 1.2em;
+    margin-left: 0.5em;
+    width:4.4em;
+    height:3.4em;
+    margin-right: 0;
+  }
+  .inb, .upb{
+    width: 5.2em;
+    height: 3em;
+    margin-right: 0.5em;
+  }
+  .home:hover, .buy:hover, .sell:hover, .profile:hover{
+    font-size: 2em;
+    height: 2em;
+  }
+}
+
+
+@media only screen and (max-width:480px){
+  .formainphoto{
+    margin-left: 2em;
+    width: 26em;
+    height: 20em;
+  }
+  .mainphoto{
+    max-width: 100%;
+  }
+  .content{
+    margin-left: 3em;
+  }
+  .fortext{
+    margin-left: 1em;
+  }
+  .cat{
+    margin-left: 1em;
+    margin-right: 0.2em;
+  }
+  .icon{
+    width:3.2em;
+    height:2em;
+  }
+  .image{
+    margin-top: 1.5em;
+    margin-left: 0.5em;
+    width:3.4em;
+    height:2.4em;
+    margin-right: 0;
+  }
+  .inb, .upb{
+    width: 3.2em;
+    height: 3em;
+  }
+  .home:hover, .buy:hover, .sell:hover, .profile:hover{
+    font-size: 2em;
+    height: 2em;
+  }
+}
+@media only screen and (max-width:320px){
+  .formainphoto{
+    margin-left: 2em;
+    width: 16em;
+    height: 14em;
+  }
+  .mainphoto{
+    max-width: 100%;
+  }
+  .content{
+    margin-left: 2em;
+  }
+  .fortext{
+    margin-left: 1em;
+  }
+  .cat{
+    margin-right: 0.2em;
+  }
+  .icon{
+    width:3.2em;
+    height:2em;
+  }
+  .image{
+    margin-top: 1.5em;
+    margin-left: 0.5em;
+    width:3.4em;
+    height:2.4em;
+    margin-right: 0;
+  }
+  .inb, .upb{
+    margin-left: 0;
+    width: 3.2em;
+    height: 3em;
+  }
+  .home, .buy, .sell, .profile{
+    margin-left: 0.3em;
+  }
+  .home:hover, .buy:hover, .sell:hover, .profile:hover{
+    font-size: 1.5em;
+    height: 2em;
+  }
+}
+}

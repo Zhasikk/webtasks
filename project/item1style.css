@@ -1,0 +1,133 @@
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-image: url("http://ncag.org/wp-content/uploads/2017/02/74c1eabc5efc1b0d5a7c7ddabb823cb3.jpg");
+}
+.header{
+  display:flex;
+  width:100%;
+  height: 6em;
+  top:0;
+  flex-direction: row;
+  background-color: #392613;
+  flex-wrap: nowrap;
+}
+.image{
+  margin-right: 2em;
+  margin-left: 2em;
+  width: 6.5em;
+  height: 5.5em;
+  border: 1px dashed black;
+}
+.icon{
+  width: 6.3em;
+  height: 5.3em;
+}
+.cat{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.home, .buy, .sell, .profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.home:hover, .buy:hover, .sell:hover, .profile:hover{
+  font-size: 2em;
+  text-align: center;
+  justify-content: center;
+  height: 3em;
+}
+.sighup, .sighin{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+  width: 6em;
+  height: 4em;
+}
+.upb{
+  border:1px solid #264d00;
+  border-radius: 5px;
+  width: 5em;
+  background-color: #264d00;
+  height: 3em;
+  color:white;
+}
+.inb{
+  color:white;
+  background-color: #7a7a52;
+  border:1px solid #7a7a52;
+  border-radius: 5px;
+  width: 5em;
+  height: 3em;
+}
+p{
+  color:white;
+}
+.content{
+  margin-left: 4em;
+  margin-right: 4em;
+  border: 2px solid #ffffb3;
+  border-radius: 5px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  background-color: #ffffb3;
+  flex-direction: row;
+}
+.text{
+  color: black;
+}
+.maindesc{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-right: 3em;
+}
+.description{
+  display: flex;
+  flex-direction: row;
+}
+.inf{
+  margin-left: 2em;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.inputinf{
+  display: flex;
+  flex-direction: column;
+}
+.desc{
+  margin-left: 2em;
+  width: 10%;
+  display: flex;
+}
+.mainphoto{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4em;
+  margin-top: 4em;
+}
+.photo{
+  width: 50%;
+  margin-bottom: 2em;
+}
+.smphotos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 8em;
+}
+.smphotos img{
+  width: 20%;
+}
