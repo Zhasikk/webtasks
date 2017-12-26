@@ -1,3 +1,8 @@
+<?php include "includes/db.php"; ?>
+		<?php
+			$query = mysqli_query($connection,"SELECT * FROM `item` WHERE `id` = '" . $id . "'");
+			$items = mysqli_fetch_assoc($query);
+			?>
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="profilestyle.css">
